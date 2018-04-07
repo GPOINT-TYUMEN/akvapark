@@ -1,0 +1,20 @@
+$CirceReg: 'Circe-Regular';
+$CirceReg3: 'CirceRounded-Regular3';
+$CirceReg4: 'CirceRounded-Regular4';
+$CirceBold: 'Circe-Bold';
+$Circe-ExtraBold: 'Circe-ExtraBold';
+
+$Gilroy: 'Gilroy-Regular';
+
+@include fonts($CirceReg, 'circe/');
+@include fonts($CirceReg3, 'circe/');
+@include fonts($CirceBold, 'circe/');
+@include fonts($CirceReg4, 'circe/');
+@include fonts($Circe-ExtraBold, 'circe/');
+
+
+@include fonts($Gilroy, 'gilroy/');
+
+
+
+

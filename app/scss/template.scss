@@ -1,0 +1,25 @@
+@import "../libs/functions.scss";
+@import "../fonts/fonts.scss";
+
+//> OVERALL
+@import "overall/colors.scss";
+@import "overall/index.scss";
+//< OVERALL  
+
+//> PLUGINS
+@import "../templates/site/plugins/owl/scss/plugin.scss";
+//> PLUGINS
+
+//> WIDGETS
+@import "../templates/site/widgets/left-nav/scss/widget.scss";
+//> WIDGETS
+
+
+//> MODULES
+@import "../templates/site/modules/header-bunner/scss/module.scss";
+@import "../templates/site/modules/fixed-contacts/scss/module.scss";
+@import "../templates/site/modules/advantages/scss/module.scss";
+@import "../templates/site/modules/attractions/scss/module.scss";
+@import "../templates/site/modules/prices/scss/module.scss";
+@import "../templates/site/modules/about/scss/module.scss";
+//< MODULES

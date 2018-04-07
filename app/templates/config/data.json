@@ -1,0 +1,27 @@
+{
+
+	"phone": "+7 (3452) 790-330",
+	"tel": "+73452790330",
+
+
+	"project": {
+		"author": "https://vk.com/webcoder2014",
+		"manager": "https://vk.com/yanakarpenko",
+		"url": "http://akva.cb58494.tmweb.ru/"
+	},
+
+
+	"mail": {
+		"email": {
+			"0": "webproger2014@gmail.com",
+			"1": "webproger2014@gmail.com"
+		},
+
+		"theme": "Тема письма",
+		"authorMsg": "От кого письмо"
+	},
+
+	"load": {
+		"dir": "akva"
+	}
+}

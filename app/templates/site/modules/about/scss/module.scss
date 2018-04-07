@@ -1,0 +1,80 @@
+.about {
+	background-color: #f3f4f9;
+	border-bottom: 5px solid $blue;
+
+	.module_wrapper {
+		position: relative;
+		height: 465px;
+	}
+
+	.about-wrapper {
+		float: left;
+		width: 100%;
+		max-width: 453px;
+		margin-top: 65px;
+	}
+	.about-caption {
+		font-family: $CirceReg;
+		font-size: 14px;
+		color: #272727;
+	}
+
+	.about-title {
+		font-family: $CirceReg3;
+		font-size: 18px;
+		color: #272727;
+		text-transform: uppercase;
+		margin-top: 5px;
+	}
+
+	.about-title:after {
+		content: "";
+		display: block;
+		height: 4px;
+		background-color: $blue;
+		margin-top: 22px;
+		width: 45px;
+	}
+
+	.about-desc {
+		font-family: $CirceReg;
+		font-size: 14px;
+		color: #272727;
+		margin-top: 20px;
+		line-height: 18px;
+		max-width: 386px;
+	}
+
+	.company-caption {
+		margin-top: -54px;
+		margin-left: 25px;
+	}
+
+	.author {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+	.company-author {
+		float: right;
+		font-family: $Gilroy;
+		font-size: 14px;
+		color: #353535;
+		line-height: 17px;
+		margin-top: 5px;
+	}
+	.about-footer {
+		margin-top: 35px;
+	}
+
+	img {
+		max-width: none;
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	.about {
+
+	}
+}

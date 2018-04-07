@@ -1,0 +1,252 @@
+.attractions {
+	background-color: #f3f4f9;
+
+	.attractions-content {
+		position: relative;
+		width: 960px;
+		height: 570px;
+	}
+
+	.gallery-slider {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		display: none;
+	}
+
+	.gallery-item {
+		background-repeat: no-repeat;
+		background-position: center;
+		display: inline-block;
+		width: 150px;
+		margin: auto;
+	}
+
+	.attraction-slider {
+		position: relative;
+	}
+
+	.attraction-left {
+		width: 385px;
+	}
+
+	.attractions-content {
+		background-color: $w;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 65px;
+	}
+
+	[class*="route-"] {
+		text-align: center;
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		top: 6px;
+		border: 2px solid #898989;
+		padding-top: 5px;
+		@include radius;
+	}
+
+	.route-left {
+		left: -45px;
+	}
+
+	.route-right {
+		right: -8px;
+	}	
+
+	.age {
+		font-family: $CirceReg3;
+		font-size: 12px;
+		color: #272727;
+	}
+
+	.age-caption {
+		position: relative;
+		top: -2px;
+		display: inline-block;
+		width: 100%;
+		margin-left: 15px;
+		max-width: 190px;
+		height: 1px;
+		background-color: #000;
+	}
+
+	.age-number {
+		font-family: $CirceReg3;
+		font-size: 24px;
+		color: #272727;
+		margin-left: 10px;
+	}
+
+	.attraction-advantages {
+		margin-top: 60px;
+		margin-left: 70px;
+	}
+
+	.advantage {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		max-width: 68px;
+		margin-right: 20px;
+		text-align: left;
+	}
+
+	.advantage-title {
+		font-family: $Circe-ExtraBold;
+		font-size: 24px;		
+		color: #272727;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #000;
+
+		span {
+			font-family: $CirceBold;
+			font-size: 12px;	
+		}
+	}
+
+	.advantage-desc {
+		font-family: $CirceReg4;
+		font-size: 12px;
+		line-height: 12px;
+		color: #000;
+		margin-top: 10px;
+	}
+
+	.attraction-top {
+		width: 305px;
+		margin: 35px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.attraction-slider {
+		max-width: 252px;
+		margin-top: 50px;
+		margin-left: 85px;
+
+		.slider-title {
+			font-family: $Circe-ExtraBold;
+			font-size: 31px;
+		}
+
+		.slider-desc {
+			font-family: $CirceReg;
+			font-size: 14px;
+			color: #272727;
+		}
+	}
+
+	.attraction-left,
+	.attraction-center,
+	.attraction-right,
+	.attraction-bg {
+		float: left;
+		height: 570px;		
+	}
+
+	.attraction-center,
+	.attraction-bg {
+		width: 325px;
+	}
+
+	.attraction-image-bottom {
+		margin-left: 70px;
+		margin-top: 70px;
+
+		.bottom-bg,
+		.bottom-desc {
+			float: left;
+		}
+
+		.bottom-desc {
+			font-family: $CirceReg4;
+			font-size: 12px;
+			line-height: 12px;
+			color: #272727;
+			margin-left: 7px;
+			margin-top: 5px;
+		}
+	}
+
+	.attraction-right {
+		width: 250px;
+	}
+
+	.attraction-info-1 {
+		height: 286px;
+		background-color: #d5f1ff;
+
+		.info-title {
+			text-transform: uppercase;
+			font-family: $CirceReg3;
+			font-size: 12px;			
+			color: #383838;
+			text-align: center;
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			margin-top: 35px;
+		}
+
+		.info-desc {
+			font-family: $CirceReg;
+			font-size: 14px;				
+			color: #272727;
+			line-height: 18px;
+			margin-top: 28px;
+			margin-left: 32px;
+			max-width: 175px;
+		}
+	}
+
+	.attraction-info-2 {
+		.info-title {
+			text-transform: uppercase;
+			font-family: $CirceReg3;
+			font-size: 12px;	
+			line-height: 18px;		
+			color: #383838;			
+			text-align: center;
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			margin-top: 20px;
+		}
+
+		.info-bg {
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		.info-pagination {
+			cursor: pointer;
+			font-family: $CirceReg3;
+			font-size: 23px;
+			color: #272727;
+			float: right;
+			margin-right: 47px;
+			margin-top: 20px;
+		}
+
+		.info-pagination:hover {
+			transition: 0.4s;
+			color: $blue;
+		}
+	}
+
+	[class*="btn_"] {
+		margin-top: 37px;
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	.attractions {
+
+	}
+}

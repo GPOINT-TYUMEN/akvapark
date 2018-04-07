@@ -1,0 +1,41 @@
+.header-bunner {
+	background-color: #f3f4f9;
+	height: 541px;
+
+	.bunner {
+		position: relative;
+	}
+
+	.bunner-title {
+		display: inline-block;
+		vertical-align: top;
+		font-family: $CirceReg3;
+		font-size: 40px;
+		line-height: 43px;
+		text-transform: uppercase;
+		color: $grey;
+		margin-top: 150px;
+	}
+
+	.bunner-desc {
+		font-family: $CirceReg;
+		font-size: 14px;
+		color: #312c28;
+		padding-left: 18px;
+		border-left: 4px solid $blue;
+		margin-top: 35px;
+	}
+
+	.bunner-bg {
+		img {
+			position: absolute;
+			top: 0;
+			left: 400px;
+			max-width: none;
+		}
+	}
+
+	[class*="btn_"] {
+		margin-top: 32px;
+	}
+}

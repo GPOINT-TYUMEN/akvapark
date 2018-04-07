@@ -1,0 +1,26 @@
+@@include('header.html', {
+	"title": "Привет, это структура front-end",
+	"desc": "",
+	"h1": "",
+	"css": [
+		"template"
+	]
+})	
+
+
+@@include('site/widgets/left-nav/widget.html')
+@@include('site/modules/fixed-contacts/module.html')
+<div class="modules">
+@@include('site/modules/header-bunner/module.html')
+@@include('site/modules/advantages/module.html')
+@@include('site/modules/attractions/module.html')
+@@include('site/modules/prices/module.html')
+@@include('site/modules/about/module.html')
+</div>
+
+
+@@include('footer.html', {
+	"js": [
+		"template"
+	]
+})

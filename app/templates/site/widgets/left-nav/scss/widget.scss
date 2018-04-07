@@ -1,0 +1,150 @@
+.left-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 93%;
+	width: 72px;
+	z-index: 50;
+	background-color: $blue;
+	transition: 0.4s;
+
+	.logos {
+		text-align: center;
+		margin-top: 18px;
+
+		.logo:first-child {
+			display: inline-block;
+		}
+
+		.logo:last-child {
+			display: none;
+		}		
+	}
+
+	nav {
+		margin-top: 18px;
+	}
+
+	li {
+		text-align: center;
+		height: 45px;
+		cursor: pointer;
+		margin-top: 15px;
+		padding-top: 5px;
+
+		.icon {
+			padding-bottom: 8px;
+			border-bottom: 4px solid $w;
+
+			svg {
+				max-width: 30px;
+				margin-top: 2px;
+
+				.bg {
+					fill: #FFF;
+				}
+			}
+		}
+
+		a {
+			display: none;
+			opacity: 0;
+			margin-top: 8px;
+			font-family: $CirceReg;
+			font-size: 14px;
+			color: $w;
+		}
+	}
+
+	li.active {
+		background-color: $w;
+
+		.icon {
+			border: none;
+			svg {
+				.bg {
+					fill: #eb3a59;
+				}
+			}
+		}
+
+		a {
+			color: #353535;
+		}
+	}
+
+	li:not(.active):hover {
+		transition: 0.4s;
+		background-color: #74d3ee;
+	}
+
+	.social {
+		display: none;
+	    position: absolute;
+	    bottom: 25px;
+	    width: 100%;
+		text-align: center;
+	}
+
+	.soc {
+		display: inline-block;
+		vertical-align: top;
+		background-color: $blue;
+		width: 25px;
+		height: 25px;
+		margin-right: 3px;
+		@include radius;
+
+		svg {
+			height: 25px;
+			width: 25px;
+
+			.bg {
+				fill: $w;
+			}
+		}	
+
+		a {
+			width: 25px;
+			height: 25px;		
+		}
+	}
+
+	.soc:hover {
+		transition: 0.4s;
+		background-color: $w;
+
+		svg {
+			.bg {
+				transition: 0.4s;
+				fill: $blue;
+			}
+		}
+	}
+}
+
+.left-nav:hover {
+	width: 220px;
+
+	.logos {
+		.logo:first-child {
+			display: none;
+		}
+
+		.logo:last-child {
+			display: inline-block;
+		}	
+	}
+
+	li {
+		.icon {
+			display: none;
+		}
+
+		a {	
+			transition: 0.4s;
+			opacity: 7;
+			display: block;
+		}
+	}
+} 
