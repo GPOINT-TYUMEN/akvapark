@@ -1,6 +1,5 @@
 .prices {
 	background-color: #f3f4f9;
-
 	.rates {
 		float: left;
 		width: 100%;
@@ -85,7 +84,7 @@
 	.rate-info-bg {
 		display: flex;
 		float: left;
-		width: 140px;
+		width: 105px;
 		text-align: center;
 		height: 175px;
 
@@ -116,10 +115,40 @@
 
 	.info-text-wrapper {
 		margin: auto;
-		max-width: 255px;
+		width: 325px;
+	}
+
+	.rates.theme-2 {
+		max-width: 385px;
+	}
+
+	.rate.theme-2 {
+		.rate-left {
+			max-width: 303px;
+		}
+
+		.rate-right {
+			max-width: 48px;
+		}
+
+		.rate-price {
+			color: #000;
+			margin-top: -15px;
+		}
+	}
+
+	.rate-info.theme-2 {
+		margin-top: 10px;
+	}
+
+	.rates-info.theme-2 {
+		margin-top: 30px;
 	}
 }
 
+.prices.theme-2 {
+	padding-bottom: 70px;
+}
 @media screen and (max-width: 960px) and (min-width: 320px) {
 	.prices {
 
