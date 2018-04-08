@@ -88,6 +88,9 @@ a:hover {
 	max-width: 102px;
 }
 
+.module_caption.fix:after {
+	max-width: 100%;
+}
 .module_desc {
 	display: inline-block;
 	vertical-align: top;

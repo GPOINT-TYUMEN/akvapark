@@ -1,5 +1,55 @@
 .contacts {
 	
+	background-color: #f3f4f9;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.contacts-content {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+	}
+	.contacts {
+		position: relative;
+		z-index: 2;
+		float: right;
+		background-color: $blue;
+		height: 490px;
+		width: 328px;
+		padding-left: 20px;
+	}	
+
+	.contact {
+		margin-top: 45px;
+	}
+	.contact-title {
+		font-family: $CirceReg4;
+		font-size: 18px;
+		color: #272727;
+		line-height: 20px;
+	}
+
+	.contact-value {
+		font-family: $CirceReg;
+		font-size: 18px;
+		color: #FFF;
+		line-height: 20px;
+		margin-top: 10px;
+	}
+}
+
+.contacts-2 {
+	height: 490px;
+
+	.module_container {
+		position: relative;
+		margin-top: 65px;
+	}	
 }
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
