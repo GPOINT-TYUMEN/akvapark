@@ -2,8 +2,8 @@ $(function () {
 	var galleryNews= $('.gallery-news');
 
 	//Отображение скрытых новостных блоков
-	$('.show-more-news', galleryNews).on('click', function () {
-		var news = $('.news-content.no-active', galleryNews);
+	$('[class*="btn_"]', galleryNews).on('click', function () {
+		var news = $('.news.no-active', galleryNews);
 
 		//Обращаемся к самому первому скрытому блоку
 		if (news[0]) {

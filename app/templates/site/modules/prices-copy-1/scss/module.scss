@@ -1,0 +1,127 @@
+.prices {
+	background-color: #f3f4f9;
+
+	.rates {
+		float: left;
+		width: 100%;
+		max-width: 378px;
+	}
+
+	.prices-content {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.rate.theme-blue {
+		.rate-line {
+			background-color: $blue;
+		}
+	}
+
+	.rate.theme-red {
+		.rate-line {
+			background-color: #ec3156;
+		}
+	}	
+
+	.rate {
+		margin-top: 50px;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+
+		.rate-left {
+			float: left;
+			width: 100%;
+			max-width: 225px;
+		}
+
+		.rate-right {
+			float: right;
+			width: 100%;
+			max-width: 125px;
+		}
+	}
+
+	.rate-line {
+		height: 4px;
+		margin-top: 8px;
+	}
+
+	.rate-title,
+	.rate-caption {
+		font-family: $CirceReg;
+		font-size: 16px;
+		color: #272727;
+	}
+
+	.rate-caption {
+		margin-top: 12px;
+	}
+
+	.rate-price {
+		font-family: $CirceReg3;
+		font-size: 36px;
+		color: #272727;		
+	}
+
+	.rates-info {
+		float: right;
+		width: 100%;
+		max-width: 463px;	
+		margin-top: 45px;
+	}
+
+	.rate-info {
+		background-color: #FFF;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		margin-top: 30px;
+		max-width: 463px;
+		height: 175px;
+	}
+
+	.rate-info-bg {
+		display: flex;
+		float: left;
+		width: 140px;
+		text-align: center;
+		height: 175px;
+
+		img {
+			margin: auto;
+		}
+	}
+
+	.rate-info-title {
+		font-family: $CirceReg4;
+		font-size: 18px;
+		color: #000;		
+	}
+
+	.rate-info-desc {
+		font-family: $CirceReg;
+		font-size: 14px;
+		color: #272727;		
+		line-height: 18px;
+		margin-top: 15px;
+	}
+
+
+	.rate-info-text {
+		display: flex;
+   		height: 175px;
+	}
+
+	.info-text-wrapper {
+		margin: auto;
+		max-width: 255px;
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	.prices {
+
+	}
+}
