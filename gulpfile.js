@@ -27,8 +27,8 @@ var configData = jsonfile.readFileSync('app/templates/config/data.json');
 
 gulp.task('sass', function () {
 	return gulp.src(['app/scss/**/*.scss', '!app/scss/overall/**/*.scss'])
-			.pipe(errorHandler(errorShow))
-			.pipe(plumber())
+		//	.pipe(errorHandler(errorShow))
+		//	.pipe(plumber())
 			.pipe(sass())
 	  		.pipe(cssmin())
 			.pipe(gulp.dest('app/css'))

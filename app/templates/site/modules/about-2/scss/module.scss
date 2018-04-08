@@ -1,0 +1,173 @@
+.about-2 {
+	background-color: #f3f4f9;
+
+	.about-content {
+		display: inline-block;
+		vertical-align: top;
+		background-color: #FFF;
+		width: 650px;
+		height: 515px;
+		margin-top: 70px;
+	}
+
+	.about-bg {
+		display: inline-block;
+		vertical-align: top;
+		width: 202px;
+
+		img {
+			margin-top: 45px;
+			margin-left: -80px;
+			max-width: none;
+		}
+	}
+	.about-right {
+		display: inline-block;
+		vertical-align: top;
+		width: 356px;
+	}	
+
+	.about-title {
+		font-family: $Circe-ExtraBold;
+		font-size: 31px;	
+		color: #000;
+		margin-top: 68px;	
+	}
+
+	.about-desc {
+		font-family: $CirceReg;
+		font-size: 14px;
+		color: #272727;	
+		line-height: 16px;	
+		margin-top: 36px;
+		max-width: 222px;
+		min-height: 115px;
+	}
+
+	.advantage {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		max-width: 68px;
+		margin-right: 20px;
+		text-align: left;
+	}
+
+	.advantage-title {
+		font-family: $Circe-ExtraBold;
+		font-size: 24px;		
+		color: #272727;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #000;
+
+		span {
+			font-family: $CirceBold;
+			font-size: 12px;
+			margin-left: 4px;	
+		}
+	}
+
+	.advantage-desc {
+		font-family: $CirceReg4;
+		font-size: 12px;
+		line-height: 12px;
+		color: #000;
+		margin-top: 10px;
+	}	
+
+
+	[class*="btn_"] {
+		margin-top: 60px;
+	}
+
+	[class*="route-"] {
+		text-align: center;
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		right: 0;
+		left: 0;
+		margin: auto;
+		border: 2px solid #898989;
+		padding-top: 5px;
+		@include radius;
+	}
+
+	.route-up {
+		top: 15px;
+	}
+
+	.route-down {
+		bottom: -20px;
+	}	
+
+	.vertical-slider-wrapper {
+		margin-top: 50px;
+	}
+
+	.vertical-slider {
+		float: right;
+		height: 495px;
+		position: relative;
+		margin-top: 50px;
+		
+		.slick {
+			height: 420px;
+			width: 222px;
+		}
+
+		.item {
+			display: inline-block;
+			background-color: #FFF;
+			width: 222px;
+			height: 95px;
+			margin-top: 10px;
+		}
+
+		.desc {
+			display: flex;
+		    float: right;
+		    height: 95px;
+		    width: 132px;	
+		    padding-right: 8px;	
+		}
+
+		.desc-value {
+			font-family: $CirceBold;
+			font-size: 16px;
+			color: #000;
+			line-height: 18px;
+			margin: auto 0;
+		}
+
+		img {
+			max-width: none;
+		}
+
+		.item-bg {
+			display: flex;			
+			float: left;
+			width: 60px;
+			height: 95px;
+			img {
+				margin: auto;
+			}
+		}
+
+		.item-bg-wrapper {
+			display: flex;
+			margin-top: 23px;
+			background-color: #f3f4f9;
+			height: 40px;
+			width: 40px;		
+			margin: auto;
+			@include radius;	
+		}
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	.about-2 {
+
+	}
+}

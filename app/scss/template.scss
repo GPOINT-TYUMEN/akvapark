@@ -1,25 +1,30 @@
-@import "../libs/functions.scss";
-@import "../fonts/fonts.scss";
+@import "../libs/functions";
+@import "../fonts/fonts";
 
 //> OVERALL
-@import "overall/colors.scss";
-@import "overall/index.scss";
+@import "overall/colors";
+@import "overall/index";
 //< OVERALL  
 
 //> PLUGINS
-@import "../templates/site/plugins/owl/scss/plugin.scss";
+@import "../templates/site/plugins/owl/scss/plugin";
+@import "../templates/site/plugins/slick/scss/plugin";
 //> PLUGINS
 
 //> WIDGETS
-@import "../templates/site/widgets/left-nav/scss/widget.scss";
+@import "../templates/site/widgets/left-nav/scss/widget";
 //> WIDGETS
 
 
 //> MODULES
-@import "../templates/site/modules/header-bunner/scss/module.scss";
-@import "../templates/site/modules/fixed-contacts/scss/module.scss";
-@import "../templates/site/modules/advantages/scss/module.scss";
-@import "../templates/site/modules/attractions/scss/module.scss";
-@import "../templates/site/modules/prices/scss/module.scss";
-@import "../templates/site/modules/about/scss/module.scss";
+@import "../templates/site/modules/header-bunner/scss/module";
+@import "../templates/site/modules/fixed-contacts/scss/module";
+@import "../templates/site/modules/advantages/scss/module";
+@import "../templates/site/modules/attractions/scss/module";
+@import "../templates/site/modules/prices/scss/module";
+@import "../templates/site/modules/about/scss/module";
+@import "../templates/site/modules/about-2/scss/module";
+@import "../templates/site/modules/gallery-news/scss/module";
+@import "../templates/site/modules/temperature/scss/module";
+@import "../templates/site/modules/purity/scss/module";
 //< MODULES
