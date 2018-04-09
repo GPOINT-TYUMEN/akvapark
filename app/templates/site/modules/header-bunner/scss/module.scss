@@ -1,11 +1,23 @@
+#header-bunner-fix {
+	height: 1080px;
+}
+
 .header-bunner {
 	background-color: #f3f4f9;
-	height: 541px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 
 	.bunner {
 		position: relative;
 	}
 
+	.bunner:not(:first-child) {
+		display: none;
+	}
+	
 	.bunner-title {
 		display: inline-block;
 		vertical-align: top;
@@ -37,5 +49,30 @@
 
 	[class*="btn_"] {
 		margin-top: 32px;
+	}
+
+	.pagination {
+		margin-top: 40px;
+
+		span {
+			cursor: pointer;
+			display: inline-block;
+			margin-right: 5px;
+			width: 10px;
+			height: 10px;
+			background-color: #ec3156;
+			border: 1px solid #ec3156;
+			@include radius;
+		}
+
+		span.active {
+			transition: 0.4s;
+			border-color: #353535;
+		}
+
+		span:hover {
+			transition: 0.4s;
+			opacity: 0.7;
+		}
 	}
 }

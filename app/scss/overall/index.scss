@@ -16,6 +16,10 @@ a:hover {
 	text-decoration: none !important;
 }
 
+.modules {
+	position: relative;
+	z-index: 3;
+}
 [class*="btn_"] {
 	cursor: pointer;
 	display: inline-block;
