@@ -48,14 +48,15 @@ $bgErrorInput: rgba(255, 0, 0, 0.12);
 
 		i {
 			font-size: 20px;
-			color: $grey;
+			transition: 0.4s;
+			color: #FFF;
 		}
 	}
 
 	.modal-close:hover {
 		i {
 			transition: 0.4s;
-			color: $grey2;
+			color: #FFF;
 		}
 	}
 
@@ -96,7 +97,7 @@ $bgErrorInput: rgba(255, 0, 0, 0.12);
 
 	.form-title {
 		margin-bottom: 30px;
-		font-family: $GilroyBold;
+		font-family: $Gilroy;
 		font-size: 16px;
 		line-height: 20px;
 	}
@@ -230,7 +231,7 @@ $bgErrorInput: rgba(255, 0, 0, 0.12);
 			display: inline-block;
 			vertical-align: top;
 			margin-left: 15px;
-			font-family: $GilroyItalic;
+			font-family: $Gilroy;
 			font-size: 11px;
 			color: $colorPoliticaModal;
 			font-weight: bold;

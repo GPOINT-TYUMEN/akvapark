@@ -10,6 +10,10 @@
 		margin-top: 70px;
 	}
 
+	.about-item:not(:first-child) {
+		display: none;
+	}
+
 	.about-bg {
 		display: inline-block;
 		vertical-align: top;
@@ -111,12 +115,12 @@
 
 	.vertical-slider {
 		float: right;
-		height: 495px;
+		height: 512px;
 		position: relative;
-		margin-top: 50px;
+		margin-top: 55px;
 		
 		.slick {
-			height: 420px;
+			height: 512px;
 			width: 222px;
 		}
 
@@ -125,7 +129,19 @@
 			background-color: #FFF;
 			width: 222px;
 			height: 95px;
-			margin-top: 10px;
+			margin-top: 13px;
+			outline: 0;
+			cursor: pointer;
+		}	
+
+
+		.item.active {
+			transition: 0.4s;
+			background-color: #d5f1ff;
+
+			.item-bg-wrapper {
+				background-color: #FFF;
+			}
 		}
 
 		.desc {

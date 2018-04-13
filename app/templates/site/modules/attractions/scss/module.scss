@@ -7,6 +7,10 @@
 		height: 570px;
 	}
 
+	img {
+		display: inline-block;
+		vertical-align: top;
+	}
 	.gallery-slider {
 		position: absolute;
 		left: 0;
@@ -15,6 +19,63 @@
 		height: 100%;
 		text-align: center;
 		display: none;
+		z-index: 15;
+
+		.items {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+		.left-slide,
+		.right-slide,
+		.close {
+			position: absolute;
+			transition: 0.4s;
+			opacity: 0;
+			cursor: pointer;
+			z-index: 20;
+		}
+
+		.left-slide:hover,
+		.right-slide:hover,
+		.close:hover {
+			opacity: 0.3 !important;
+		}
+
+		.left-slide {
+			left: 15px;
+		}
+
+		.right-slide {
+			right: 15px;
+		}
+
+		.left-slide,
+		.right-slide {
+			top: 275px;
+		}
+
+		.close {
+			top: 15px;
+			right: 15px;
+		}
+
+		.gallery-item {
+			display: none;
+		}
+	}
+
+	.gallery-slider.active {
+		background-color: #FFF;
+		transition: 0.4s;
+		.left-slide,
+		.right-slide,
+		.close {
+			transition: 0.4s;
+			opacity: 1;
+		}
 	}
 
 	.gallery-item {
@@ -23,6 +84,10 @@
 		display: inline-block;
 		width: 150px;
 		margin: auto;
+	}
+
+	.attraction {
+		outline: 0;
 	}
 
 	.attraction-slider {
@@ -155,6 +220,22 @@
 		width: 325px;
 	}
 
+	.attraction-center {
+		position: relative;
+	}
+
+	.zoom {
+		position: absolute;
+		bottom: 13px;
+		right: 18px;
+		cursor: pointer;
+		z-index: 10;
+	}
+
+	.zoom:hover {
+		transition: 0.4s;
+		opacity: 0.7;
+	}
 	.attraction-image-bottom {
 		margin-left: 70px;
 		margin-top: 70px;
@@ -240,6 +321,30 @@
 		}
 	}
 
+	.attraction-slider-images {
+		position: relative;
+		.owl-dots {
+			text-align: center;
+			position: absolute;
+			bottom: 10px;
+			display: inline-block;
+			width: 100%;
+		}
+
+		.owl-dot {
+			display: inline-block;
+			vertical-align: top;
+			width: 10px;
+			height: 10px;
+			margin-right: 8px;
+			border: 2px solid #FFF;
+			@include radius;
+		}
+
+		.owl-dot.active {
+			background-color: #FFF;
+		}
+	}
 	[class*="btn_"] {
 		margin-top: 37px;
 	}

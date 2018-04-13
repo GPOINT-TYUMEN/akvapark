@@ -35,5 +35,3 @@ function modalClose(modal) {
 	$(modal).fadeOut(200);
 	$(modal).attr('show', '');	
 }
-
-//=include modal-more.js

@@ -29,6 +29,7 @@
 
 	<!-- CMS -->
 	<link rel="stylesheet" type="text/css" href="cms/css/cms.css">
+	<link rel="stylesheet" type="text/css" href="cms/css/animate.min.css">
 	<!-- CMS -->
 	
 	<!-- TEMPLATE -->
@@ -471,7 +472,7 @@
 
 	 	<div class="fixed-contacts-content">
 	 		<div class="message">Написать нам</div>
-	 		<div class="btn_1">Купить билеты</div>
+	 		<div class="btn_1 show-modal">Купить билеты</div>
 	 		<div class="contacts">
 	 			<span class="phone">
 	 				<a href="tel:">+7 (3452) 790-330</a>
@@ -623,120 +624,251 @@
 		</div>
 		
 		<div class="attractions-content">
-			<div class="attraction">
-				<div class="attraction-left">
-					<div class="attraction-top">
-						<span class="age">Возраст</span>
-						<span class="age-caption"></span>
-						<span class="age-number">16+</span>
-					</div>
+			<div class="attraction-wrapper owl-carousel">
+				<div class="attraction">
+					<div class="attraction-left">
+						<div class="attraction-top">
+							<span class="age">Возраст</span>
+							<span class="age-caption"></span>
+							<span class="age-number">16+</span>
+						</div>
 
-					<div class="attraction-slider">
-						<span class="route-left">
-							<svg 
+						<div class="attraction-slider">
+							<span class="route-left">
+								<svg 
  xmlns="http://www.w3.org/2000/svg"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  width="9px" height="12px">
 <path fill-rule="evenodd"  stroke="rgb(38, 38, 38)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round" fill="none"
  d="M5.499,8.799 L2.200,5.499 L5.499,2.199 "/>
 </svg>
-						</span>
-						<span class="route-right">
-							<svg 
+							</span>
+							<span class="route-right">
+								<svg 
  xmlns="http://www.w3.org/2000/svg"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  width="9px" height="12px">
 <path fill-rule="evenodd"  stroke="rgb(38, 38, 38)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round" fill="none"
  d="M2.500,2.199 L5.800,5.498 L2.500,8.799 "/>
 </svg>
-						</span>
-						<div class="slider-wrapper">
-							<div class="slider-title">Летучие рыбы</div>
-							<div class="slider-desc">
-								Скоростные гонки, всевозможные ралли… а у нас 
-								свое состязание – «Летучие рыбы». Хочешь узнать,
-								как летают рыбы? И кто первый пересечет линию финиша? 
-								Скорее на горку!
+							</span>
+							<div class="slider-wrapper">
+								<div class="slider-title">Летучие рыбы</div>
+								<div class="slider-desc">
+									Скоростные гонки, всевозможные ралли… а у нас 
+									свое состязание – «Летучие рыбы». Хочешь узнать,
+									как летают рыбы? И кто первый пересечет линию финиша? 
+									Скорее на горку!
+								</div>
+							</div>
+						</div>
+
+						<div class="attraction-advantages">
+							<div class="advantage">
+								<div class="advantage-title">
+									11<span>м</span>
+								</div>
+								<div class="advantage-desc">
+									высота старта
+								</div>
+							</div>
+
+							<div class="advantage">
+								<div class="advantage-title">
+									5<span>м/сек</span>
+								</div>
+								<div class="advantage-desc">
+									скорость спуска
+								</div>
+							</div>
+
+							<div class="advantage">
+								<div class="advantage-title">
+									58<span>м</span>
+								</div>
+								<div class="advantage-desc">
+									длина спуска
+								</div>
+							</div>	 						 					
+						</div>
+
+						<div class="attraction-image-bottom">
+							<div class="bottom-bg">
+								<img src="/images/krug.png" alt="">
+							</div>
+							<div class="bottom-desc">
+								Одноместный<br />
+								круг
 							</div>
 						</div>
 					</div>
 
-					<div class="attraction-advantages">
-						<div class="advantage">
-							<div class="advantage-title">
-								11<span>м</span>
+					<div class="attraction-center">
+						<div class="attraction-slider-images owl-carousel">
+							<div class="attraction-bg owl-lazy" data-src="/images/at1.jpg" data-retina="/images/at1.jpg">
+								<span img-src="/images/at1.jpg"></span>
+								<span img-src="/images/at2.jpg"></span>
 							</div>
-							<div class="advantage-desc">
-								высота старта
-							</div>
-						</div>
-
-						<div class="advantage">
-							<div class="advantage-title">
-								5<span>м/сек</span>
-							</div>
-							<div class="advantage-desc">
-								скорость спуска
+							<div class="attraction-bg owl-lazy" data-src="/images/at2.jpg" data-retina="/images/at1.jpg">
+								<span img-src="/images/at1.jpg"></span>
+								<span img-src="/images/at2.jpg"></span>								
 							</div>
 						</div>
-
-						<div class="advantage">
-							<div class="advantage-title">
-								58<span>м</span>
-							</div>
-							<div class="advantage-desc">
-								длина спуска
-							</div>
-						</div>	 						 					
+						<img src="/images/loupe.png" class="zoom">
 					</div>
 
-					<div class="attraction-image-bottom">
-						<div class="bottom-bg">
-							<img src="/images/krug.png" alt="">
+					<div class="attraction-right">
+						<div class="attraction-info-1">
+							<div class="info-title">Как кататься?</div>
+							<div class="info-desc">
+								Спуск осуществляется без использования 
+								вспомогательных средств (рафтов, ковриков), 
+								в положении лежа на животе, головой вперед. 
+							</div>
 						</div>
-						<div class="bottom-desc">
-							Одноместный<br />
-							круг
-						</div>
-					</div>
-				</div>
-
-				<div class="attraction-center">
-					<div class="attraction-slider-images">
-						<div class="attraction-bg active" style="background-image: url(/images/at1.jpg)"></div>
-					</div>
-				</div>
-
-				<div class="attraction-right">
-					<div class="attraction-info-1">
-						<div class="info-title">Как кататься?</div>
-						<div class="info-desc">
-							Спуск осуществляется без использования 
-							вспомогательных средств (рафтов, ковриков), 
-							в положении лежа на животе, головой вперед. 
-						</div>
-					</div>
-					<div class="attraction-info-2">
-						<div class="info-title">Уровень <br /> экстремальности</div>
-						<div class="info-bg">
-							 <img src="/images/men.png" alt="">
-						</div>
-						<div class="info-pagination">
-							Средний <span><svg 
+						<div class="attraction-info-2">
+							<div class="info-title">Уровень <br /> экстремальности</div>
+							<div class="info-bg">
+								 <img src="/images/men.png" alt="">
+							</div>
+							<div class="info-pagination">
+								Средний <span><svg 
  xmlns="http://www.w3.org/2000/svg"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  width="27px" height="11px">
 <path fill-rule="evenodd"  fill="rgb(39, 39, 39)"
  d="M0.011,4.708 C0.011,4.708 21.625,4.708 23.000,4.708 C24.375,4.708 18.508,1.868 18.508,0.993 C18.508,0.118 26.989,4.310 26.989,5.497 C26.989,6.684 18.508,11.065 18.508,10.003 C18.508,8.941 24.843,6.184 23.030,6.184 C21.218,6.184 0.011,6.184 0.011,6.184 L0.011,4.708 Z"/>
 </svg></span>
-						</div>
-					</div>	 				
+							</div>
+						</div>	 				
+					</div>
 				</div>
 
+				<div class="attraction" data-animation-in="fadeIn">
+					<div class="attraction-left">
+						<div class="attraction-top">
+							<span class="age">Возраст</span>
+							<span class="age-caption"></span>
+							<span class="age-number">15+</span>
+						</div>
+
+						<div class="attraction-slider">
+							<span class="route-left">
+								<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="9px" height="12px">
+<path fill-rule="evenodd"  stroke="rgb(38, 38, 38)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round" fill="none"
+ d="M5.499,8.799 L2.200,5.499 L5.499,2.199 "/>
+</svg>
+							</span>
+							<span class="route-right">
+								<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="9px" height="12px">
+<path fill-rule="evenodd"  stroke="rgb(38, 38, 38)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round" fill="none"
+ d="M2.500,2.199 L5.800,5.498 L2.500,8.799 "/>
+</svg>
+							</span>
+							<div class="slider-wrapper">
+								<div class="slider-title">Летучие рыбы</div>
+								<div class="slider-desc">
+									Скоростные гонки, всевозможные ралли… а у нас 
+									свое состязание – «Летучие рыбы». Хочешь узнать,
+									как летают рыбы? И кто первый пересечет линию финиша? 
+									Скорее на горку!
+								</div>
+							</div>
+						</div>
+
+						<div class="attraction-advantages">
+							<div class="advantage">
+								<div class="advantage-title">
+									11<span>м</span>
+								</div>
+								<div class="advantage-desc">
+									высота старта
+								</div>
+							</div>
+
+							<div class="advantage">
+								<div class="advantage-title">
+									5<span>м/сек</span>
+								</div>
+								<div class="advantage-desc">
+									скорость спуска
+								</div>
+							</div>
+
+							<div class="advantage">
+								<div class="advantage-title">
+									58<span>м</span>
+								</div>
+								<div class="advantage-desc">
+									длина спуска
+								</div>
+							</div>	 						 					
+						</div>
+
+						<div class="attraction-image-bottom">
+							<div class="bottom-bg">
+								<img src="/images/krug.png" alt="">
+							</div>
+							<div class="bottom-desc">
+								Одноместный<br />
+								круг
+							</div>
+						</div>
+					</div>
+
+					<div class="attraction-center">
+						<div class="attraction-slider-images owl-carousel">
+							<div class="attraction-bg owl-lazy" data-src="/images/at1.jpg" data-retina="/images/at1.jpg">
+								<span img-src="/images/at1.jpg"></span>
+								<span img-src="/images/at2.jpg"></span>
+							</div>
+							<div class="attraction-bg owl-lazy" data-src="/images/at2.jpg" data-retina="/images/at1.jpg">
+								<span img-src="/images/at1.jpg"></span>
+								<span img-src="/images/at2.jpg"></span>							
+							</div>
+						</div>
+						<img src="/images/loupe.png" class="zoom">
+					</div>
+
+					<div class="attraction-right">
+						<div class="attraction-info-1">
+							<div class="info-title">Как кататься?</div>
+							<div class="info-desc">
+								Спуск осуществляется без использования 
+								вспомогательных средств (рафтов, ковриков), 
+								в положении лежа на животе, головой вперед. 
+							</div>
+						</div>
+						<div class="attraction-info-2">
+							<div class="info-title">Уровень <br /> экстремальности</div>
+							<div class="info-bg">
+								 <img src="/images/men.png" alt="">
+							</div>
+							<div class="info-pagination">
+								Средний <span><svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="27px" height="11px">
+<path fill-rule="evenodd"  fill="rgb(39, 39, 39)"
+ d="M0.011,4.708 C0.011,4.708 21.625,4.708 23.000,4.708 C24.375,4.708 18.508,1.868 18.508,0.993 C18.508,0.118 26.989,4.310 26.989,5.497 C26.989,6.684 18.508,11.065 18.508,10.003 C18.508,8.941 24.843,6.184 23.030,6.184 C21.218,6.184 0.011,6.184 0.011,6.184 L0.011,4.708 Z"/>
+</svg></span>
+							</div>
+						</div>	 				
+					</div>
+				</div>				
 			</div>
+		
 
 			<div class="gallery-slider">
-				<div class="gallery-item" style="background-image: url(/images/at1.jpg);"></div>
+				<img src="/images/left-1.png" class="left-slide" slide="0">
+				<img src="/images/right-1.png" class="right-slide" slide="0">
+				<img src="/images/close.png" class="close">	
 			</div>
 		</div>
 
@@ -1383,36 +1515,7 @@
 	 		</div>	
 
 	 		<div class="temperature-bg">
-	 				<svg viewbox="0 0 206.81 576.22" xmlns="http://www.w3.org/2000/svg">
-	<defs>
-		<style>
-		.cls-1{fill:#fff;}.cls-2{fill:#69f1ff;}.cls-3,.cls-5,.cls-7{fill:none;stroke-miterlimit:10;stroke-width:9px;}.cls-3{stroke:#45c7ec;}.cls-4{fill:#1bcfed;}.cls-5{stroke:#eda11b;}.cls-6{fill:#1cb5ea;}.cls-7{stroke:#ec3156;}.cls-8{fill:#45c7ec;}
-		</style>
-	</defs>
-	<g data-name="Слой 2" id="Слой_2">
-		<g id="Visual">
-			<path class="cls-1" d="M160.64,401.22c-3-2.09-6-4.23-9-6.39C154.66,397,157.65,399.12,160.64,401.22Z"></path>
-			<path class="cls-2" d="M160.64,401.22c-3-2.09-6-4.23-9-6.39C154.66,397,157.65,399.12,160.64,401.22Z"></path>
-			<path class="cls-3" d="M136.87,407V384.14h0V283.92q-4.06-.48-8.24-1.11c-11.66,4.63-19.07,1.05-25.63-3.27l-.14-.1a32.14,32.14,0,0,0-9-4.12c-2.1-.58-4.22-1.19-6.34-1.83A15.59,15.59,0,0,0,74.9,275a47.74,47.74,0,0,0-5,3.53V407a73.91,73.91,0,1,0,66.94,0Zm.12,38.84a18.18,18.18,0,0,1,2.55.6,18.54,18.54,0,0,1,7.64,4.62,17.4,17.4,0,0,1,2.07,2.46c.15.2.28.4.41.6a18,18,0,0,1,1.16,2.05,18.62,18.62,0,0,1,1.84,8.1c0,.4,0,.8,0,1.19,0,.22,0,.45,0,.68a.06.06,0,0,1,0,0c0,.32-.07.63-.12.94a9.17,9.17,0,0,1-.16.91v0c-.06.3-.13.6-.21.89s-.13.5-.21.75-.22.69-.34,1-.21.55-.33.82a18.86,18.86,0,0,1-1.53,2.88l-.39.57a4.87,4.87,0,0,1-.35.48c-.13.18-.27.36-.41.53a17.37,17.37,0,0,1-2.51,2.56c-.18.16-.37.31-.56.45s-.35.28-.54.41l-.15.11c-.19.14-.39.27-.59.4a16.25,16.25,0,0,1-2.31,1.29c-.2.1-.41.19-.61.27s-.56.24-.85.34-.57.2-.86.29a9.05,9.05,0,0,1-.89.25,8,8,0,0,1-.85.2h-.07a15.15,15.15,0,0,1-1.79.28h-.05a17.18,17.18,0,0,1-1.91.1,18.69,18.69,0,0,1-18.68-18.69c0-.63,0-1.26.1-1.91,0-.34.07-.67.13-1s.09-.55.14-.82l0-.13c.05-.23.1-.46.16-.69s.1-.39.16-.59l.18-.61c0-.11.07-.22.11-.32s.13-.37.2-.55.19-.5.3-.75a18.92,18.92,0,0,1,9.82-9.8c.25-.11.49-.21.74-.3l.7-.25a5.25,5.25,0,0,1,.56-.18l.59-.16c.36-.1.72-.19,1.08-.26l.65-.11a10.92,10.92,0,0,1,1.13-.15q.59-.06,1.18-.08h1l.66,0,.59,0c.41,0,.82.08,1.22.14A1.45,1.45,0,0,1,137,445.79Z"></path>
-			<path class="cls-4" d="M160.64,401.22c-3-2.09-6-4.23-9-6.39C154.66,397,157.65,399.12,160.64,401.22Z"></path>
-			<path class="cls-5" d="M137,445.79a16.88,16.88,0,0,1,2.55.6,18.54,18.54,0,0,1,7.64,4.62,18,18,0,0,1,2.07,2.46c.15.2.28.4.41.6a19.63,19.63,0,0,1,1.16,2.05,18.62,18.62,0,0,1,1.84,8.1c0,.4,0,.8,0,1.19q0,.36-.06.72c0,.31-.07.63-.12.94s-.1.6-.16.91v0c-.06.3-.13.59-.21.89s-.13.5-.21.75-.22.69-.34,1-.21.55-.33.82a18.86,18.86,0,0,1-1.53,2.88q-.18.28-.39.57a4.87,4.87,0,0,1-.35.48c-.13.18-.27.36-.41.53a17.37,17.37,0,0,1-2.51,2.56c-.18.16-.37.31-.56.45s-.36.28-.54.41l-.15.11c-.19.14-.39.28-.59.4a16.25,16.25,0,0,1-2.31,1.29l-.61.27-.85.34-.86.29-.89.25-.85.2h-.07a16.33,16.33,0,0,1-1.84.28,17.18,17.18,0,0,1-1.91.1,18.69,18.69,0,0,1-18.68-18.69,17.21,17.21,0,0,1,.1-1.91c0-.34.07-.67.13-1s.09-.54.14-.82l0-.13c.05-.23.1-.46.16-.69s.1-.39.16-.59.12-.41.18-.61.07-.22.11-.32.13-.37.2-.55.19-.5.3-.75a18.71,18.71,0,0,1,9.82-9.8c.24-.11.49-.21.74-.3s.46-.18.7-.25a5.25,5.25,0,0,1,.56-.18c.2-.06.39-.12.59-.16.36-.1.72-.19,1.08-.26l.65-.11a10.92,10.92,0,0,1,1.13-.15,17,17,0,0,1,1.9-.1,17.78,17.78,0,0,1,2.74.21A1.45,1.45,0,0,1,137,445.79Z"></path>
-			<path class="cls-6" d="M160.64,401.22c-3-2.09-6-4.23-9-6.39C154.66,397,157.65,399.12,160.64,401.22Z"></path>
-			<path class="cls-6" d="M139.54,446.39a16.88,16.88,0,0,0-2.55-.6A18.18,18.18,0,0,1,139.54,446.39Zm-5.3-.84.66,0Zm.66,0,.59,0Zm.59,0c.41,0,.82.08,1.22.14C136.31,445.69,135.9,445.64,135.49,445.61Zm-1.52-.07-.69,0H134Zm-.72,0c-.4,0-.79,0-1.18.08Q132.66,445.58,133.25,445.56Zm0,0h0ZM116.8,456.85a18.92,18.92,0,0,1,9.82-9.8A18.71,18.71,0,0,0,116.8,456.85Zm-1.41,5.46a17.21,17.21,0,0,0-.1,1.91C115.29,463.59,115.33,463,115.39,462.31Z"></path>
-			<path class="cls-7" d="M115.39,462.31c0-.34.07-.67.13-1s.09-.54.14-.82l0-.13c.05-.23.1-.46.16-.69s.1-.39.16-.59.12-.41.18-.61.07-.22.11-.32.13-.37.2-.55.19-.5.3-.75a18.71,18.71,0,0,1,9.82-9.8c.24-.11.49-.21.74-.3s.46-.18.7-.25a5.25,5.25,0,0,1,.56-.18c.2-.06.39-.12.59-.16.36-.1.72-.19,1.08-.26l.65-.11a10.92,10.92,0,0,1,1.13-.15,17,17,0,0,1,1.9-.1,17.78,17.78,0,0,1,2.74.21,1.45,1.45,0,0,1,.28,0,16.88,16.88,0,0,1,2.55.6,18.54,18.54,0,0,1,7.64,4.62,18,18,0,0,1,2.07,2.46c.15.2.28.4.41.6a19.63,19.63,0,0,1,1.16,2.05,18.62,18.62,0,0,1,1.84,8.1c0,.4,0,.8,0,1.19q0,.36-.06.72c0,.31-.07.63-.12.94s-.1.6-.16.91v0c-.06.3-.13.59-.21.89s-.13.5-.21.75-.22.69-.34,1-.21.55-.33.82a18.86,18.86,0,0,1-1.53,2.88q-.18.28-.39.57a4.87,4.87,0,0,1-.35.48c-.13.18-.27.36-.41.53a17.37,17.37,0,0,1-2.51,2.56c-.18.16-.37.31-.56.45s-.36.28-.54.41l-.15.11c-.19.14-.39.28-.59.4a16.25,16.25,0,0,1-2.31,1.29l-.61.27-.85.34-.86.29-.89.25-.85.2h-.07a16.33,16.33,0,0,1-1.84.28,17.18,17.18,0,0,1-1.91.1,18.69,18.69,0,0,1-18.68-18.69A17.21,17.21,0,0,1,115.39,462.31Z"></path>
-			<path class="cls-8" d="M74.72,68.18H132.1a4.78,4.78,0,0,0,0-9.56H74.72a4.78,4.78,0,1,0,0,9.56Z"></path>
-			<path class="cls-8" d="M132.1,77.74H103.41a4.78,4.78,0,1,0,0,9.56H132.1a4.78,4.78,0,0,0,0-9.56Z"></path>
-			<path class="cls-8" d="M74.72,106.43H132.1a4.78,4.78,0,0,0,0-9.56H74.72a4.78,4.78,0,1,0,0,9.56Z"></path>
-			<path class="cls-8" d="M132.1,116H103.41a4.78,4.78,0,1,0,0,9.56H132.1a4.78,4.78,0,0,0,0-9.56Z"></path>
-			<path class="cls-8" d="M74.72,144.68H132.1a4.78,4.78,0,0,0,0-9.56H74.72a4.78,4.78,0,0,0,0,9.56Z"></path>
-			<path class="cls-8" d="M132.1,154.24H103.41a4.78,4.78,0,1,0,0,9.56H132.1a4.78,4.78,0,0,0,0-9.56Z"></path>
-			<path class="cls-8" d="M74.72,182.93H132.1a4.78,4.78,0,0,0,0-9.56H74.72a4.78,4.78,0,0,0,0,9.56Z"></path>
-			<path class="cls-8" d="M132.1,192.49H103.41a4.78,4.78,0,1,0,0,9.56H132.1a4.78,4.78,0,0,0,0-9.56Z"></path>
-			<path class="cls-8" d="M74.72,221.18H132.1a4.78,4.78,0,0,0,0-9.56H74.72a4.78,4.78,0,0,0,0,9.56Z"></path>
-			<path class="cls-8" d="M132.1,230.74H103.41a4.78,4.78,0,1,0,0,9.56H132.1a4.78,4.78,0,0,0,0-9.56Z"></path>
-			<path class="cls-8" d="M136.87,254.64a4.79,4.79,0,0,1-4.78,4.79H74.72a4.78,4.78,0,0,1,0-9.57h57.37A4.79,4.79,0,0,1,136.87,254.64Z"></path>
-			<path class="cls-8" d="M165.56,390.23V46.35C165.56,17.76,144.19,0,109.78,0H99.43C64.63,0,41.25,18.63,41.25,46.35V390.23a103.4,103.4,0,1,0,124.31,0Zm-62.16,176a93.43,93.43,0,0,1-52.59-170.6V46.35C50.81,19.2,77,9.57,99.41,9.57h10.36c10.84,0,46.22,2.64,46.22,36.78V395.62a93.4,93.4,0,0,1-52.59,170.6Z"></path>
-		</g>
-	</g></svg>
+	 			<img src="/images/gradus.png" alt="">
 	 		</div>
 	 		
 	 		<div class="temperature m-left">
@@ -2390,7 +2493,101 @@
   </div>
 </div>  
 </div>
+<div class="widget_sec modal modal-default">
+	<div class="widget_container">
+		<div class="widget_wrapper">
+			<div class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+			<form class="form-dymanic">
+				<div class="bg">
+					<img src="images/logo_header.png" alt="">							
+				</div>
 
+				<div class="inputs">
+					<div class="input input-0">
+					 	<div class="input-title">Имя</div>
+					 	<input type="text" placeholder="Имя" mail="Имя" reg="name">
+					 	<div class="msg"></div>
+					</div>
+					<div class="input input-0">
+					 	<div class="input-title">Телефон*</div>
+					 	<input type="text" placeholder="+7 (...) ... .. .." reg="phone" mail="Телефон" data="elem:required">
+					 	<div class="msg"></div>
+					</div>										
+				</div>
+
+
+
+				<div class="politica">
+					<span class="check" check="true">
+						<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 511.60138 415.48065"
+   height="415.48065"
+   width="511.60138"
+   id="svg2"
+   version="1.1">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <path
+     id="path817"
+     class="svg-check"
+     d="M 155.24316,414.46275 C 147.32933,412.64172 138.99284,408.8736 131.9534,403.93571 125.92525,399.70721 20.17556,292.35131 13.238251,283.41742 0.21498023,266.64602 -3.5952398,242.1717 3.5773898,221.36248 10.459761,201.39539 25.9215,186.31109 46.74315,179.25046 c 8.33855,-2.82761 28.07227,-2.65042 37.5,0.33671 14.136216,4.47899 17.54623,7.244 52.50001,42.5696 l 32.5,32.84573 106.5,-108.62715 C 334.31815,86.630431 387.41815,32.487922 393.74315,26.058682 c 13.4367,-13.65812 20.279,-18.4897997 31.8153,-22.4661797 46.7728,-16.1219203 93.2095,24.3856297 85.1192,74.2510987 -1.3899,8.56646 -5.2188,18.04489 -10.5133,26.025649 -2.8846,4.34804 -50.91,54.00859 -145.0611,150 -77.41181,78.92501 -143.03788,145.38658 -145.83567,147.69238 -5.79916,4.77941 -14.49732,9.32648 -22.52442,11.77493 -7.50127,2.28806 -23.90251,2.87444 -31.5,1.12619 z" />
+</svg>
+		
+					</span>
+					<span class="caption">
+						Я ознакомлен и согласен с условиями
+						<a href="/politica.pdf">Политики конфендициальности</a>
+					</span>
+				</div>
+
+				<div class="form-send button-container">
+					<div class="btn_1" metrika="zayavka1">Отправить заявку</div>
+				</div>
+			</form>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="widget_sec modal msg-form-default">
+	<div class="widget_container">
+		<div class="widget_wrapper">
+			<div class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+			<div class="form-title cent">
+				Ваша заявка успешна отправлена!
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="widget_sec modal modal-more">
+	<div class="widget_container">
+		<div class="widget_wrapper">
+			<div class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+			<div class="modal-more-content"></div>
+		</div>
+	</div>
+</div>
 
 	<!-- CMS -->
 	<script type="text/javascript" src="cms/js/cms.js"></script>

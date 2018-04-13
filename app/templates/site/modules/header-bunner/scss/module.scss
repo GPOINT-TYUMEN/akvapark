@@ -61,13 +61,14 @@
 			width: 10px;
 			height: 10px;
 			background-color: #ec3156;
-			border: 1px solid #ec3156;
+			border: 2px solid #ec3156;
 			@include radius;
 		}
 
 		span.active {
 			transition: 0.4s;
 			border-color: #353535;
+			background-color: #FFF;
 		}
 
 		span:hover {
