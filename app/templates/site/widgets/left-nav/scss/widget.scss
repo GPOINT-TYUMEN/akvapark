@@ -148,3 +148,9 @@
 		}
 	}
 } 
+
+@media screen and (max-width: 1152px) and (min-width: 320px) {
+	.left-nav {
+		display: none;
+	}
+}

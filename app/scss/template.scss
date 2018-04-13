@@ -9,6 +9,7 @@
 //> PLUGINS
 @import "../templates/site/plugins/owl/scss/plugin";
 @import "../templates/site/plugins/slick/scss/plugin";
+@import "../templates/site/plugins/scroll/scss/plugin";
 //> PLUGINS
 
 //> WIDGETS
@@ -18,7 +19,9 @@
 
 
 //> MODULES
+@import "../templates/site/modules/mobile-nav/scss/module";
 @import "../templates/site/modules/header-bunner/scss/module";
+@import "../templates/site/modules/header-nav/scss/module";
 @import "../templates/site/modules/fixed-contacts/scss/module";
 @import "../templates/site/modules/advantages/scss/module";
 @import "../templates/site/modules/attractions/scss/module";

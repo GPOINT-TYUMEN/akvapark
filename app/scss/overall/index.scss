@@ -104,3 +104,9 @@ a:hover {
 	color: #272727;
 	line-height: 18px;
 }
+
+@media screen and (max-width: 1152px) and (min-width: 620px) {
+	.mobile-nav {
+		display: block;
+	}
+}

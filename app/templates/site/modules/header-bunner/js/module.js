@@ -6,7 +6,9 @@ $(function () {
 	*
 	*/
 	function headerBunnerWindow() {
-		$('#header-bunner-fix').height(screen.height);
+		if ($('body').width() >= 960) {
+			$('#header-bunner-fix').height(screen.height);
+		}
 	};
 
 	headerBunnerWindow();
@@ -43,10 +45,12 @@ $(function () {
 
 		if (!$(this).hasClass('active')) {
 			$('.pagination span.active', bunnersWrapper).removeClass('active');
-			$(this).addClass('active');
+
+			
 			
 			//Надём слайд
 			var slide = $(this).attr('slide-bunner');
+			$('.header-bunner .pagination [slide-bunner*="' + slide + '"]').addClass('active');
 
 			//Вернём необходимый баннер
 			var bunner = $('[bunner="' + slide + '"]', bunnersWrapper);
@@ -57,12 +61,18 @@ $(function () {
 			if (bunner.length > 0) {
 				//> LAZY LOAD
 				var bg = $('.bunner-bg img', bunner),
+					bgCount = bg.length;
 					bgLazy = $(bg).attr('data-lazy');
 
-				if (bgLazy) {
-					$(bg).attr('src', bgLazy);
-					$(bg).attr('data-lazy', '');
+				for (var index = 0; index < bgCount; index++) {
+					var bgLazy = $(bg[index]).attr('data-lazy');
+
+					if (bgLazy) {
+						$(bg[index]).attr('src', bgLazy);
+						$(bg[index]).attr('data-lazy', '');
+					}					
 				}
+
 				//< LAZY LOAD
 				$(bunner).fadeIn(400);
 			}			

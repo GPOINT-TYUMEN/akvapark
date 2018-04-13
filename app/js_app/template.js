@@ -1,7 +1,9 @@
 //=include ../templates/site/modules/header-bunner/js/module.js
+//=include ../templates/site/modules/header-nav/js/module.js
 //=include ../templates/site/plugins/lazyload/js/plugin.js
 //=include ../templates/site/plugins/owl/js/plugin.js
 //=include ../templates/site/plugins/slick/js/plugin.js
+//=include ../templates/site/plugins/scroll/js/plugin.js
 //=include ../templates/site/plugins/form/js/plugin.js
 //=include ../templates/site/widgets/left-nav/js/widget.js
 //=include ../templates/site/widgets/modal/js/widget.js
