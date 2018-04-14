@@ -236,6 +236,7 @@
 		transition: 0.4s;
 		opacity: 0.7;
 	}
+
 	.attraction-image-bottom {
 		margin-left: 70px;
 		margin-top: 70px;
@@ -257,6 +258,26 @@
 
 	.attraction-right {
 		width: 250px;
+		position: relative;
+
+		.close {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+		}
+	}
+
+
+	.more-desc {
+		font-family: $CirceReg;
+		font-size: 14px;
+		color: #272727;
+		line-height: 16px;
+		text-align: left;
+		display: inline-block;
+	    max-width: 195px;
+	    margin-left: 25px;
+	    margin-top: 25px;		
 	}
 
 	.attraction-info-1 {
@@ -321,6 +342,23 @@
 		}
 	}
 
+
+	.attraction-info-2-more {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #FFF;   
+		transition: 0.4s; 
+		transform: translateX(100%);	
+		text-align: center;		
+	}
+
+	.attraction-info-2-more.active {
+		transform: translateX(0);
+	}
+
 	.attraction-slider-images {
 		position: relative;
 		.owl-dots {
@@ -352,6 +390,159 @@
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
 	.attractions {
+		.attractions-content {
+			width: 100%;
+		}
+
+
+		.attraction-right {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 720px) {
+	.attractions {
+
+		.gallery-slider {
+			height: 570px;
+		}
+		
+		.attractions-content {
+			height: 857px;
+		}
+
+		.attraction-left {
+			width: 336px;
+		}
+
+		.attraction-slider {
+			margin-left: 57px;
+		}
+
+		.advantage {
+			max-width: 60px;
+		}
+
+
+		.more-desc {
+			float: left;
+		}
+
+		.attraction-center {
+			width: 50%;
+		}
+
+		.attraction-bg {
+			width: 100%;
+		}
+
+		.more-desc {
+			width: 100%;
+			max-width: 340px;
+			margin-top: 125px;
+			margin-left: 70px;
+		}
+
+		.attraction-right {
+			height: 286px;
+		}
+
+		.attraction-info-1,
+		.attraction-info-2 {
+			width: 50%;
+			float: left;
+		}
+
+		.attraction-info-2 {
+			.info-pagination {
+				margin-right: 0;
+				width: 100%;
+				text-align: center;
+			}
+		}
+
+		.attraction-info-2-more {
+			.attraction-info-2 {
+				width: 240px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 720px) and (min-width: 320px) {
+
+	.attractions {
+		[class*="route-"] {
+			top: -6px;
+		}
+
+		.advantage {
+			max-width: 60px;
+		}
+
+		.attraction-advantages,
+		.attraction-image-bottom {
+			margin-left: 20px;
+		}		
+
+		.attractions-content {
+			height: auto;
+		}
+
+		.attraction-center,
+		.attraction-left {
+			width: 100%;
+		}
+
+		.attraction-center {
+			height: auto;
+			margin-top: 20px;
+		}
+
+		.attraction-bg {
+			width: 100%;
+			height: 216px;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.attraction-info-1,
+		.attraction-info-2 {
+			width: 100%;
+			float: left;
+		}
+
+		.attraction-info-2 {
+			.info-pagination {
+				margin-right: 0;
+				width: 100%;
+				text-align: center;
+			}
+		}	
+
+		.attraction-slider {
+			max-width: 190px;
+			margin-left: 53px;
+			.slider-title	{
+				font-size: 24px;
+				line-height: 19px;
+			}
+		}
+
+		.slider-desc {
+			margin-top: 30px;
+		}
+
+		.attraction-top {
+			width: 100%;
+			padding-left: 12px;
+		}
+
+		.age-caption {
+			width: 135px;
+		}	
 
 	}
+
 }

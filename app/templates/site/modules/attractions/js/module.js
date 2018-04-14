@@ -37,56 +37,66 @@ $(function () {
 	$('body').on('click', '.attraction-slider-images .attraction-bg, .attractions .zoom', function (e) {
 		var elemSelf = e.target;
 
-		//Изображения 
-		imagesActives = $('span', elemSelf);
+		if ($(elemSelf).hasClass('zoom')) {
+			elemSelf = $(this).parent();
+		}	
 
-		var imagesCount = imagesActives.length;
-
-		var gallerySlider = '';
-		for (var index = 0; index < imagesCount; index++) {
-			gallerySlider += '<div class="gallery-item" slide="slide-' + index +'" style="background-image: url(' + $(imagesActives[index]).attr('img-src') + ');"></div>';
-		}
-		var galery = $('.gallery-slider', attractions);
-
-	
-		$(galery).fadeIn(400, function () {
-			$(galery).css('display', 'flex');
+		if ($('body').width() < 720) {
+			openSwipe(elemSelf);
+		} else {
 			
-			$('.gallery-item', galery).remove();
+			//Изображения 
+			imagesActives = $('span', elemSelf);
 
-			//Добавляем слайды
-			$(galery).append(gallerySlider);
+			var imagesCount = imagesActives.length;
 
-			galleryItem = $('.gallery-item', galery);
-
-
-			var dot = $('.owl-dot', $(elemSelf).parent().parent().parent().parent()),
-				dotCount = dot.length;
-			
-			//Вернём позицию активного слайда
-			var activeIndex;
-			for (var index = 0; index < dotCount; index++) {
-				if ($(dot[index]).hasClass('active')) {
-					activeIndex = index;
-					break;
-				}
+			var gallerySlider = '';
+			for (var index = 0; index < imagesCount; index++) {
+				gallerySlider += '<div class="gallery-item" slide="slide-' + index +'" style="background-image: url(' + $(imagesActives[index]).attr('img-src') + ');"></div>';
 			}
+			var galery = $('.gallery-slider', attractions);
 
-			
+		
+			$(galery).fadeIn(400, function () {
+				$(galery).css('display', 'flex');
+				
+				$('.gallery-item', galery).remove();
 
-			$(galleryItem[index]).css('display', 'block');
-			$(galleryItem[index]).animate({
-				"height": "100%"
-			}, 200, function () {
+				//Добавляем слайды
+				$(galery).append(gallerySlider);
+
+				galleryItem = $('.gallery-item', galery);
+
+
+				var dot = $('.owl-dot', $(elemSelf).parent().parent().parent().parent()),
+					dotCount = dot.length;
+				
+				//Вернём позицию активного слайда
+				var activeIndex;
+				for (var index = 0; index < dotCount; index++) {
+					if ($(dot[index]).hasClass('active')) {
+						activeIndex = index;
+						break;
+					}
+				}
+
+				
+
+				$(galleryItem[index]).css('display', 'block');
 				$(galleryItem[index]).animate({
-					"width": "100%"
-				}, 300 , function () {
-					$('.attractions .gallery-slider').addClass('active');
+					"height": "100%"
+				}, 200, function () {
+					$(galleryItem[index]).animate({
+						"width": "100%"
+					}, 300 , function () {
+						$('.attractions .gallery-slider').addClass('active');
+					});
 				});
-			});
 
-			setRouteSlide(index);
-		});
+				setRouteSlide(index);
+			});			
+		}
+
 	});
 
 	//CLOSE GALERY
@@ -165,4 +175,59 @@ $(function () {
 		$('.gallery-slider .left-slide').attr('slide', slide);
 		$('.gallery-slider .right-slide').attr('slide', slide);
 	}
+
+	//SHOW MORE DESC
+	$('.attractions .info-pagination').on('click', function () {
+		$('.attraction-info-2-more', $(this).parent().parent()).toggleClass('active');
+		
+	});
+
+	$('.attractions .attraction-right .close').on('click', function () {
+		$(this).parent().removeClass('active');
+	}); 
 });
+
+function openSwipe(elem) {
+	//Изображения 
+	imagesActives = $('span', elem);
+
+	var imagesCount = imagesActives.length;	
+	// build items array
+	var items = [];
+
+	for (var index = 0; index < imagesCount; index++) {
+		items[index] = {
+			src: $(imagesActives[index]).attr('img-src'),
+			w: 	 $(imagesActives[index]).attr('img-w'),
+			h: 	 $(imagesActives[index]).attr('img-h')
+		}
+	}
+	var pswpElement = document.querySelectorAll('.pswp')[0];
+
+
+
+	//Найдём index активного слайда
+	var dot = $('.owl-dot', $(elem).parent().parent().parent().parent()),
+		dotCount = dot.length;
+	
+	//Вернём позицию активного слайда
+	var activeIndex;
+	for (var index = 0; index < dotCount; index++) {
+		if ($(dot[index]).hasClass('active')) {
+			activeIndex = index;
+			break;
+		}
+	}	
+
+
+	// define options (if needed)
+	var options = {
+	    // optionName: 'option value'
+	    // for example:
+	    index: activeIndex // start at first slide
+	};
+
+	// Initializes and opens PhotoSwipe
+	var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+	gallery.init();
+}

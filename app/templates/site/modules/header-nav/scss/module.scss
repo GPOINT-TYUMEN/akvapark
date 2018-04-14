@@ -10,8 +10,6 @@ $footerBg: #28333d;
 .mobile-top-nav {
 	display: none;
 	width: 100%;
-	min-height: 75px;
-
 
 	//CUSTOM SCROLL
 	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar	{
@@ -41,15 +39,16 @@ $footerBg: #28333d;
 	}
 
 	.mobile-top-nav-wrapper {
-		background-color: #FFF;
+		background-color: $blue;
 		display: flex;
 		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 110;
 		width: 100%;
+		height: 65px;
 		padding: 15px;
-		padding-top: 25px;
+		padding-top: 5px;
 		text-align: center;     
 	}
 
@@ -62,14 +61,14 @@ $footerBg: #28333d;
 		-webkit-border-radius: 50%; /* Safari, Chrome */
 		-khtml-border-radius: 50%; /* KHTML */
 		border-radius: 50%; /* CSS3 */      
-		background-color: $blue;
+		background-color: #FFF;
 		
 		a {
 			margin: auto;
 		}
 
 		i {
-			color: #FFF !important;
+			color: $blue !important;
 			margin: auto;
 			font-size: 15px;
 		}
@@ -109,8 +108,12 @@ $footerBg: #28333d;
 		margin: auto 0;
 		i {
 			font-size: 25px;
-			color: $blue;
+			color: #FFF;
 		}   
+	}
+
+	.burger-1 {
+		margin-top: 15px;
 	}
 
 	.burger.active {
@@ -144,6 +147,10 @@ $footerBg: #28333d;
 		}
 	}
 
+	.phone-1 {
+		margin-top: 15px;
+	}
+	
 	.nav-contacts {
 		 padding: 20px;
 		float: left;       
@@ -163,6 +170,8 @@ $footerBg: #28333d;
 		margin: 0;
 		margin-top: 15px;
 		border-bottom: 2px solid #07a4d1;
+		padding-bottom: 15px;
+
 		li {
 			list-style-type: none;
 			height: 43px;
@@ -195,7 +204,7 @@ $footerBg: #28333d;
 	nav ul:las-child {
 		border: none;
 	}
-	
+
 	.nav-title {
 		font-family: $CirceBold;
 		font-size: 14px;

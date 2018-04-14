@@ -817,7 +817,7 @@
 	<div class="fogging-window"></div>
 	<div class="shade-touchstart-nav"></div>
 	<div class="mobile-top-nav-wrapper">
-		<span class="phone" metrika="zvonok">
+		<span class="phone phone-1" metrika="zvonok">
 			<a href="tel:+73452790330">
 				<i class="fa fa-phone" aria-hidden="true"></i>
 			</a>
@@ -829,7 +829,7 @@
 			</a>
 		</div>
 
-		<div class="burger">
+		<div class="burger burger-1">
 			<i class="fa fa-bars" aria-hidden="true"></i>
 		</div>
 	</div>
@@ -1080,15 +1080,16 @@
 					<div class="attraction-center">
 						<div class="attraction-slider-images owl-carousel">
 							<div class="attraction-bg owl-lazy" data-src="/images/at1.jpg" data-retina="/images/at1.jpg">
-								<span img-src="/images/at1.jpg"></span>
-								<span img-src="/images/at2.jpg"></span>
+								<span img-src="/images/at1.jpg" img-w="865" img-h="575"></span>
+								<span img-src="/images/at2.jpg" img-w="865" img-h="575">></span>
+								<img src="/images/loupe.png" class="zoom">								
 							</div>
 							<div class="attraction-bg owl-lazy" data-src="/images/at2.jpg" data-retina="/images/at1.jpg">
-								<span img-src="/images/at1.jpg"></span>
-								<span img-src="/images/at2.jpg"></span>								
+								<span img-src="/images/at1.jpg" img-w="865" img-h="575"></span>
+								<span img-src="/images/at2.jpg" img-w="865" img-h="575">></span>
+								<img src="/images/loupe.png" class="zoom">															
 							</div>
 						</div>
-						<img src="/images/loupe.png" class="zoom">
 					</div>
 
 					<div class="attraction-right">
@@ -1114,7 +1115,33 @@
  d="M0.011,4.708 C0.011,4.708 21.625,4.708 23.000,4.708 C24.375,4.708 18.508,1.868 18.508,0.993 C18.508,0.118 26.989,4.310 26.989,5.497 C26.989,6.684 18.508,11.065 18.508,10.003 C18.508,8.941 24.843,6.184 23.030,6.184 C21.218,6.184 0.011,6.184 0.011,6.184 L0.011,4.708 Z"/>
 </svg></span>
 							</div>
-						</div>	 				
+						</div>	
+
+						<div class="attraction-info-2-more">
+							<img class="owl-lazy close" data-src="/images/close.png">
+							<div class="attraction-info-2">
+								<div class="info-title">Уровень <br /> экстремальности</div>
+								<div class="info-bg">
+									 <img src="/images/men.png" alt="">
+								</div>
+								<div class="info-pagination">
+									Средний <span><svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="27px" height="11px">
+<path fill-rule="evenodd"  fill="rgb(39, 39, 39)"
+ d="M0.011,4.708 C0.011,4.708 21.625,4.708 23.000,4.708 C24.375,4.708 18.508,1.868 18.508,0.993 C18.508,0.118 26.989,4.310 26.989,5.497 C26.989,6.684 18.508,11.065 18.508,10.003 C18.508,8.941 24.843,6.184 23.030,6.184 C21.218,6.184 0.011,6.184 0.011,6.184 L0.011,4.708 Z"/>
+</svg></span>
+								</div>
+							</div>	
+							<div class="more-desc">
+								Мы позаботились о времяпрепровождении 
+								каждого нашего посетителя. В аквапарке 
+								есть горки, которые можно смело посещать 
+								с детьми и не бояться за их безопасность.
+							</div> 							
+						</div>	
+
 					</div>
 				</div>
 
@@ -1199,15 +1226,16 @@
 					<div class="attraction-center">
 						<div class="attraction-slider-images owl-carousel">
 							<div class="attraction-bg owl-lazy" data-src="/images/at1.jpg" data-retina="/images/at1.jpg">
-								<span img-src="/images/at1.jpg"></span>
-								<span img-src="/images/at2.jpg"></span>
+								<span img-src="/images/at1.jpg" img-w="865" img-h="575"></span>
+								<span img-src="/images/at2.jpg" img-w="865" img-h="575">></span>
+								<img src="/images/loupe.png" class="zoom">								
 							</div>
 							<div class="attraction-bg owl-lazy" data-src="/images/at2.jpg" data-retina="/images/at1.jpg">
-								<span img-src="/images/at1.jpg"></span>
-								<span img-src="/images/at2.jpg"></span>							
+								<span img-src="/images/at1.jpg" img-w="865" img-h="575"></span>
+								<span img-src="/images/at2.jpg" img-w="865" img-h="575">></span>
+								<img src="/images/loupe.png" class="zoom">													
 							</div>
 						</div>
-						<img src="/images/loupe.png" class="zoom">
 					</div>
 
 					<div class="attraction-right">
@@ -2961,6 +2989,71 @@
 			<div class="modal-more-content"></div>
 		</div>
 	</div>
+</div>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+          </div>
+
+        </div>
+
 </div>
 
 	<!-- CMS -->

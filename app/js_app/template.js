@@ -7,6 +7,7 @@
 //=include ../templates/site/plugins/form/js/plugin.js
 //=include ../templates/site/widgets/left-nav/js/widget.js
 //=include ../templates/site/widgets/modal/js/widget.js
+//=include ../templates/site/widgets/photoswipe/js/widget.js
 //=include ../templates/site/modules/advantages/js/module.js
 //=include ../templates/site/modules/attractions/js/module.js
 //=include ../templates/site/modules/about-2/js/module.js
