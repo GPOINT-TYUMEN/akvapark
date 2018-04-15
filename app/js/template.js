@@ -4761,6 +4761,29 @@ $(function () {
 		verticalSwiping: true,
 		lazyLoad: 'ondemand',
 		arrows: false,
+		  responsive: [
+		    {
+		      breakpoint: 960,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        vertical: false,
+		        verticalSwiping: false
+		      }
+		    },
+
+		    {
+		      breakpoint: 719,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        vertical: false,
+		        verticalSwiping: false
+		      }
+		    }		    
+		  ]
 	 });
 
 	verticalSlider.on('mousewheel', function(e) {
@@ -4773,11 +4796,11 @@ $(function () {
 		}
 	});  
 
-	$('.vertical-slider .route-up').on('click',  function () {
+	$('.vertical-slider .route-up, .vertical-slider .route-left').on('click',  function () {
 		$(verticalSlider).slick('slickNext');;
 	});
 
-	$('.vertical-slider .route-down').on('click',  function () {
+	$('.vertical-slider .route-down, .vertical-slider .route-right').on('click',  function () {
 		$(verticalSlider).slick('slickPrev');;
 	});
 
@@ -4828,4 +4851,221 @@ $(function () {
 	function showNew(newItem) {
 		$(newItem).addClass('active');
 	}	
+
+
+	 $('.gallery-news .owl-carousel').owlCarousel({
+		loop:true,
+		margin: 0,
+		nav: false,
+		items: 1,
+		lazyLoad: true     
+	  });
+
+});
+$(function () {
+	var infoText = $('.prices .rate-info-wrapper'),
+		infoTextHtml =  $(infoText).html();
+	var owlinfoText = infoText,
+		owlinfoTextOptions = {
+			loop:true,
+			margin: 0,
+			nav: false,
+			items: 1,
+			lazyLoad: true       
+		}; 
+			
+	if ($(window).width() < 480) {
+		startOwlowlinfoText();
+	}
+
+	$(window).resize(function () {
+		if ($(window).width() > 480) {
+			owlinfoText.trigger('destroy.owl.carousel');
+			$(owlinfoText).removeClass('owl-carousel');
+			$(infoText).html(infoTextHtml);
+		} else {
+			if (!$(owlinfoText).hasClass("owl-carousel")) {
+				startOwlowlinfoText();            
+			}
+		}
+	}); 
+
+	function startOwlowlinfoText() {
+		$(owlinfoText).addClass('owl-carousel');
+		owlinfoText.owlCarousel(owlinfoTextOptions);
+	}	
+
+
+	$('.prices .rates-mobile-wrapper').owlCarousel({
+		loop:true,
+		margin: 0,
+		nav: false,
+		items: 1,
+		lazyLoad: true
+	});
+
+	var adv = $('.prices .adv'), advHtml =  $(adv).html();
+	var owladv = adv,
+	    owladvOptions = {
+	        loop:true,
+	        margin: 0,
+	        nav: false,
+	        items: 1,
+	        lazyLoad: true,
+			autoHeight: true	           
+	    }; 
+	        
+	if ($(window).width() < 720) {
+	    startOwlowladv();
+	}
+
+	$(window).resize(function () {
+	    if ($(window).width() > 720) {
+	        owladv.trigger('destroy.owl.carousel');
+	        $(owladv).removeClass('owl-carousel');
+	        $(adv).html(advHtml);
+	    } else {
+	        if (!$(owladv).hasClass("owl-carousel")) {
+	            startOwlowladv();            
+	        }
+	    }
+	}); 
+
+	function startOwlowladv() {
+	    $(owladv).addClass('owl-carousel');
+	    owladv.owlCarousel(owladvOptions);
+	}	
+});
+
+$(function () {
+ $('.temperature .owl-carousel').owlCarousel({
+	loop:true,
+	margin: 0,
+	nav: false,
+	items: 1,
+	lazyLoad: true     
+  });	
+});
+$(function () {
+	var purity = $('.purity .adva'), purityHtml =  $(purity).html();
+	var owlpurity = purity,
+	    owlpurityOptions = {
+	        loop:true,
+	        margin: 0,
+	        nav: false,
+	        items: 1,
+	        lazyLoad: true,
+			autoHeight: true,	        
+		    responsive:{
+		        719:{
+		            items:1
+		        },
+
+		        960:{
+		            items:2,
+		        }
+		    }	           
+	    }; 
+	        
+	if ($(window).width() < 960) {
+	    startOwlowlpurity();
+	}
+
+	$(window).resize(function () {
+	    if ($(window).width() > 960) {
+	        owlpurity.trigger('destroy.owl.carousel');
+	        $(owlpurity).removeClass('owl-carousel');
+	        $(purity).html(purityHtml);
+	    } else {
+	        if (!$(owlpurity).hasClass("owl-carousel")) {
+	            startOwlowlpurity();            
+	        }
+	    }
+	}); 
+
+	function startOwlowlpurity() {
+	    $(owlpurity).addClass('owl-carousel');
+	    owlpurity.owlCarousel(owlpurityOptions);
+	}			
+});
+$(function () {
+
+	var clinic = $('.clinic .items'), clinicHtml =  $(clinic).html();
+	var owlclinic = clinic,
+	    owlclinicOptions = {
+	        loop:true,
+	        margin: 0,
+	        nav: false,
+	        items: 1,
+	        lazyLoad: true,
+			autoHeight: true	           
+	    }; 
+	        
+	if ($(window).width() < 960) {
+	    startOwlowlclinic();
+	}
+
+	$(window).resize(function () {
+	    if ($(window).width() > 960) {
+	        owlclinic.trigger('destroy.owl.carousel');
+	        $(owlclinic).removeClass('owl-carousel');
+	        $(clinic).html(clinicHtml);
+	    } else {
+	        if (!$(owlclinic).hasClass("owl-carousel")) {
+	            startOwlowlclinic();            
+	        }
+	    }
+	}); 
+
+	function startOwlowlclinic() {
+	    $(owlclinic).addClass('owl-carousel');
+	    owlclinic.owlCarousel(owlclinicOptions);
+	}		
+});
+$(function () {
+
+	var adv2 = $('.advantages-2 .items'), adv2Html =  $(adv2).html();
+	var owladv2 = adv2,
+	    owladv2Options = {
+	        loop:true,
+	        margin: 0,
+	        nav: false,
+	        items: 1,
+	        lazyLoad: true,
+			autoHeight: true,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+
+		        600:{
+		            items:1
+		        },
+
+		        960 :{
+		            items: 2
+		        }
+		    }			           
+	    }; 
+	        
+	if ($(window).width() < 960) {
+	    startOwlowladv2();
+	}
+
+	$(window).resize(function () {
+	    if ($(window).width() > 960) {
+	        owladv2.trigger('destroy.owl.carousel');
+	        $(owladv2).removeClass('owl-carousel');
+	        $(adv2).html(adv2Html);
+	    } else {
+	        if (!$(owladv2).hasClass("owl-carousel")) {
+	            startOwlowladv2();            
+	        }
+	    }
+	}); 
+
+	function startOwlowladv2() {
+	    $(owladv2).addClass('owl-carousel');
+	    owladv2.owlCarousel(owladv2Options);
+	}		
 });

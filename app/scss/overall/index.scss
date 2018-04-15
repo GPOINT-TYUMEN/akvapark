@@ -110,3 +110,17 @@ a:hover {
 		display: block;
 	}
 }
+
+@media screen and (max-width: 720px) and (min-width: 320px) {
+	.module_caption {
+		display: none;
+	}
+
+	.module-top {
+		margin-top: 35px;
+	}
+	
+	.module_title {
+		font-size: 30px;
+	}
+}

@@ -1,8 +1,23 @@
 .temperature {
 	background-color: #f3f4f9;
+
+
+	[class*="route-"] {
+		top: 120px;
+	}
+	
+	.route-left {
+		left: 0;
+	}
+
+	.route-right {
+		right: 0;
+	}
+
 	.temperature-content {
 		text-align: center;
 		margin-top: 65px;
+		position: relative;
 	}	
 
 	.temperature,
@@ -44,10 +59,59 @@
 		color: #272727;
 		margin-top: 15px;
 	}
+
+	.mobile {
+		display: none;
+	}	
 }
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
 	.temperature {
 
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 720px) {
+	.temperature {
+		.module_caption {
+			display: none;
+		}
+
+		.temperature-content {
+			text-align: justify;
+		}
+
+		.temperature-content:after {
+			content: "";
+			display: inline-block;
+			width: 100%;
+		}
+
+		.temperature {
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
+	}
+}
+
+@media screen and (max-width: 720px) and (min-width: 320px) {
+	.temperature {
+		.desctop {
+			display: none;
+		}
+
+		.mobile {
+			display: block;
+		}
+
+		.temperature-content {
+			margin-top: 0;
+		}
+
+		.temperature {
+			margin-right: 0 !important;
+			margin-left: 0 !important;
+			margin-top: 45px;
+		}
 	}
 }

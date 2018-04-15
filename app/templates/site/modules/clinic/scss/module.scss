@@ -1,7 +1,35 @@
 .clinic {
 	background-color: #FFF;
 	padding-bottom: 25px;
+
+	[class*="route-"] {
+		text-align: center;
+		display: flex;
+		top: 100px;
+		height: 30px;
+		width: 30px;
+		margin: auto;
+		border: 2px solid #898989;
+		padding-top: 5px;
+		display: none;
+		@include radius;
+
+		svg {
+			margin: auto;
+		}
+	}
+
+
+	.route-left {
+		left: 0;
+	}
+
+	.route-right {
+		right: 0;
+	}
+
 	.clinic-content {
+		position: relative;
 		display: inline-block;
 		vertical-align: top;
 		width: 100%;
@@ -53,6 +81,22 @@
 
 @media screen and (max-width: 960px) and (min-width: 320px) {
 	.clinic {
+		[class*="route-"] {
+			display: block;
+		}
 
+		.items {
+			text-align: center;
+		}
+
+		.item {
+			max-width: 155px;
+		}
+
+		.item-desc {
+			br {
+				display: none
+			}
+		}
 	}
 }

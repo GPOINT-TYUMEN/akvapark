@@ -1,6 +1,25 @@
 .prices {
 	background-color: #f3f4f9;
+
+	[class*="route-"] {
+		display: none;
+		top: 150px;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.route-left {
+		left: 0;
+	}
+
+	.route-right {
+		right: 0;
+	}
+
 	.rates {
+		position: relative;
 		float: left;
 		width: 100%;
 		max-width: 378px;
@@ -65,6 +84,7 @@
 	}
 
 	.rates-info {
+		position: relative;
 		float: right;
 		width: 100%;
 		max-width: 463px;	
@@ -151,6 +171,166 @@
 }
 @media screen and (max-width: 960px) and (min-width: 320px) {
 	.prices {
+
+		.rates-info,
+		.rate-info {
+			max-width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+	.prices {
+		[class*="route-"] {
+			display: block;
+		}
+
+		.rate-info-wrapper {
+			text-align: center;
+		}
+
+		.rate-info {
+			height: auto;
+			padding: 12px;
+			width: 230px;
+		}
+
+		.rate-info-bg,
+		.rate-info-text,
+		.info-text-wrapper {
+			width: 100%;
+			display: inline-block;
+			height: auto;
+		}
+
+		.rate-info-text {
+			height: auto;
+			text-align: left;
+			margin-top: 22px;
+		}
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 720px) {
+	.prices {
+		.rates {
+			max-width: 100%  !important;
+		}
+
+		.rates-wrapper {
+			float: left;
+			width: 100%;
+			max-width: 330px ;
+		}
+
+		.rates-wrapper:nth-child(odd) {
+			float: left;
+		}
+
+		.rates-wrapper:nth-child(even) {
+			float: right;
+		}
+
+		.rate {
+			.rate-left {
+				max-width: 185px;
+			}
+		}
+
+		.rates.theme-2 {
+			.rate-left {
+				max-width: 255px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 720px) and (min-width: 320px) {
+	.prices {
+		.prices-content {
+			[class*="route-"] {
+				display: block;
+				top: 68px;
+			}
+		}
+
+		.mobile {
+			display: block;
+		}
+
+		.desctop {
+			display: none;
+		}
+		.rates {
+			max-width: 100%;
+			margin-top: -15px;
+		}
+
+		.rates-wrapper {
+			float: left;
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.rate {
+			.rate-left {
+				max-width: 100%;
+			}
+
+			.rate-right {
+				margin-top: -36px;
+			}
+		}
+
+
+		.rates.mobile {
+			max-width: 100% !important;
+		}
+
+		.rates-mobile-wrapper {
+			text-align: center;
+			.rate {
+				max-width: 225px;
+			}
+
+			.rate-caption {
+				text-align: left;
+			}
+
+			.rate-price {
+				margin-top: 0 !important;
+				float: right;
+			}
+		}
+
+		.adv {
+			text-align: center;
+			.rate-info {
+				max-width: 225px;
+			}
+
+			.rate-info-bg,
+			.rate-info-text,
+			.info-text-wrapper {
+				display: inline-block;
+				width: 100%;
+				height: auto;
+			}
+
+			.rate-info-bg {
+				margin-top: 25px;
+			}
+
+			.rate-info-text {
+				padding: 12px;
+			}
+
+			.rate-info-title {
+				font-size: 14px;
+			}
+
+
+		}
 
 	}
 }

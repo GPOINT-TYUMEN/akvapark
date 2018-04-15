@@ -12,3 +12,8 @@
 //=include ../templates/site/modules/attractions/js/module.js
 //=include ../templates/site/modules/about-2/js/module.js
 //=include ../templates/site/modules/gallery-news/js/module.js
+//=include ../templates/site/modules/prices/js/module.js
+//=include ../templates/site/modules/temperature/js/module.js
+//=include ../templates/site/modules/purity/js/module.js
+//=include ../templates/site/modules/clinic/js/module.js
+//=include ../templates/site/modules/advantages-2/js/module.js

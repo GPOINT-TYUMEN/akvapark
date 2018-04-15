@@ -1,6 +1,8 @@
 .about-2 {
 	background-color: #f3f4f9;
 
+
+
 	.about-content {
 		display: inline-block;
 		vertical-align: top;
@@ -82,6 +84,10 @@
 
 	[class*="btn_"] {
 		margin-top: 60px;
+	}
+	.route-left,
+	.route-right {
+		display: none;
 	}
 
 	[class*="route-"] {
@@ -184,10 +190,151 @@
 			@include radius;	
 		}
 	}
+
+	.mobile {
+		display: none;
+	}
 }
 
+
+@media screen and (max-width: 960px) and (min-width: 720px) {
+	.about-2 {
+		.about-content {
+			width: 100%;
+			max-width: 627px;
+			margin-left: 79px;
+		}
+
+		.slick {
+			width: 590px !important;
+		}	
+
+		.vertical-slider {
+			.item {
+				margin-right: 12px;
+			}
+		}	
+	}
+}
 @media screen and (max-width: 960px) and (min-width: 320px) {
 	.about-2 {
 
+		[class*="route-"] {
+			top: 50px;
+		}
+
+		
+		.route-up,
+		.route-down {
+			display: none;
+		}
+
+		.route-left
+		.route-right {
+			display: block;
+		}
+
+		.route-left {
+			right: auto;
+		}
+
+		.route-right {
+			left: auto;
+		}
+
+		.vertical-slider {
+			width: 100%;
+			height: auto;
+			margin-top: 20px;
+			.slick {
+				margin: auto;
+				height: auto;
+			}
+
+			.item {
+				width: 182px;
+				height: 118px;
+			}
+
+			.item-bg,
+			.desc {
+				width: 100%;
+				display: inline-block;
+			}
+
+			.item-bg {
+				padding-top: 10px;
+				height: auto;
+			}
+
+			.desc {
+				margin-top: 10px;
+				padding-left: 25px;
+			}
+
+			.desc-value {
+				max-width: 125px;
+			}
+		}
+
+		.vertical-slider-wrapper {
+			margin-top: 0;
+		}
+	}
+}
+@media screen and (max-width: 720px) and (min-width: 320px) {
+	.about-2 {
+
+		.vertical-slider {
+			.slick {
+				width: 182px;
+			}		
+		}
+
+
+		.mobile {
+			display: block;
+		}
+
+		.mobile-2 {
+			display: inline-block;
+		}
+
+		.desctop {
+			display: none;
+		}
+
+		.about-content {
+			width: 100%;
+			margin-left: 0;
+			height: 585px;
+		}
+
+		.about-bg {
+			width: auto;
+			img {
+				margin-left: 0;
+				margin-top: 0;
+				max-width: 100%;
+			}
+		}
+
+		.about-right {
+			width: auto;
+			padding-left: 15px;
+		}
+
+		.about-title {
+			margin-top: 25px;
+			line-height: 27px;
+		}
+
+		.advantage {
+			max-width: 60px;
+		}
+
+		[class*="btn_"] {
+			margin-top: 22px;
+		}
 	}
 }

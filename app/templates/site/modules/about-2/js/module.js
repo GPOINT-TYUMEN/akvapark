@@ -23,6 +23,29 @@ $(function () {
 		verticalSwiping: true,
 		lazyLoad: 'ondemand',
 		arrows: false,
+		  responsive: [
+		    {
+		      breakpoint: 960,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        vertical: false,
+		        verticalSwiping: false
+		      }
+		    },
+
+		    {
+		      breakpoint: 719,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        vertical: false,
+		        verticalSwiping: false
+		      }
+		    }		    
+		  ]
 	 });
 
 	verticalSlider.on('mousewheel', function(e) {
@@ -35,11 +58,11 @@ $(function () {
 		}
 	});  
 
-	$('.vertical-slider .route-up').on('click',  function () {
+	$('.vertical-slider .route-up, .vertical-slider .route-left').on('click',  function () {
 		$(verticalSlider).slick('slickNext');;
 	});
 
-	$('.vertical-slider .route-down').on('click',  function () {
+	$('.vertical-slider .route-down, .vertical-slider .route-right').on('click',  function () {
 		$(verticalSlider).slick('slickPrev');;
 	});
 
